@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+
+<h1>O que é IMC?</h1>
+<hr>
+
+
+<p>O IMC é um cálculo simples que permite avaliar se a pessoa está dentro do peso que é considerado ideal para a sua altura.<br>
+
+Também conhecido como <strong>Índice de Massa Corporal</strong>, o IMC é uma fórmula utilizada por vários profissionais de saúde,<br> incluindo médicos, enfermeiros e nutricionistas, para saber, de uma forma rápida, se a pessoa precisa ganhar ou perder peso.<br>
+
+Embora seja uma ferramenta muito comum, o IMC não é considerado a forma mais exata de avaliar o peso, já que não leva <br>em consideração a composição corporal. Por isso, é comum que no caso de atletas <br>(que possuem uma maior quantidade de massa muscular) seja aconselhado o uso de outras técnicas, como a bioimpedância, para uma avaliação mais detalhada do peso.</p>
+<hr>
+
+<script>
+
+    alert("Calculadora de IMC's")
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+
+}
+
+function calculaImc(peso, altura) {
+
+    return peso / (altura * altura);
+    
+}
+
+mostra("<h2>Resultado dos IMC's</h2>");
+
+
+var imcPessoa1 = calculaImc(73, 1.74);
+mostra(imcPessoa1);
+mostra("<hr>");
+
+var imcPessoa2 = calculaImc(76, 1.73);
+mostra(imcPessoa2);
+mostra("<hr>");
+
+
+var imcPessoa3 = calculaImc(25, 1.45);
+mostra(imcPessoa3);
+mostra("<hr>");
+
+var totalImc = imcPessoa1 + imcPessoa2 + imcPessoa3;
+
+document.write("A soma dos IMC's é: " + totalImc);
+mostra("<hr>");
+
+</script>
+
+Para uma calculadora com maior precisão clica<a href="https://www.tuasaude.com/calculadora/imc/"> aqui</a>
+</body>
+
+</html>
+
+<head>
+
+<body>
+
+
+
